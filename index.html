@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Rise Academy</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #172033;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 18px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #7c5cff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 75px 6%;
+      text-align: center;
+      background: linear-gradient(135deg, #111827, #312e81);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #a78bfa;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.7;
+      color: #e5e7eb;
+    }
+
+    .buttons {
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 6px;
+    }
+
+    .primary {
+      background: #7c5cff;
+      color: white;
+    }
+
+    .secondary {
+      border: 1px solid #ffffff;
+      color: white;
+    }
+
+    section {
+      padding: 55px 6%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 35px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 30px 22px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+    }
+
+    .card h3 {
+      margin: 12px 0;
+      font-size: 22px;
+    }
+
+    .price {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 15px 0;
+      color: #4f46e5;
+    }
+
+    .card ul {
+      list-style: none;
+      line-height: 2;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .feature {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .feature-box {
+      background: white;
+      padding: 22px 15px;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .feature-box .icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .notice {
+      max-width: 850px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      text-align: center;
+      padding: 30px 15px;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 800px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 6px;
+        font-size: 12px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 450px) {
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 55px 20px;
+      }
+
+      section {
+        padding: 45px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Nova Rise <span>Academy</span></div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#plans">Plans</a>
+    <a href="#features">Features</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Welcome to <span>Nova Rise Academy</span></h1>
+
+  <p>
+    Freelancing projects, digital skills, training and a structured
+    member platform — all in one place.
+  </p>
+
+  <div class="buttons">
+    <a class="btn primary" href="register.html">Join Now</a>
+    <a class="btn secondary" href="login.html">Member Login</a>
+  </div>
+</section>
+
+<section id="plans">
+  <h2 class="section-title">Membership Plans</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Starter</h3>
+      <div class="price">₹299</div>
+      <ul>
+        <li>Member Dashboard</li>
+        <li>Training Access</li>
+        <li>Lead Section</li>
+        <li>Member Support</li>
+      </ul>
+      <a class="btn primary" href="register.html">Choose Plan</a>
+    </div>
+
+    <div class="card">
+      <h3>Standard</h3>
+      <div class="price">₹799</div>
+      <ul>
+        <li>Member Dashboard</li>
+        <li>Training Access</li>
+        <li>Lead Section</li>
+        <li>Referral System</li>
+      </ul>
+      <a class="btn primary" href="register.html">Choose Plan</a>
+    </div>
+
+    <div class="card">
+      <h3>Premium</h3>
+      <div class="price">₹999</div>
+      <ul>
+        <li>Member Dashboard</li>
+        <li>Training Access</li>
+        <li>Lead Section</li>
+        <li>Referral System</li>
+      </ul>
+      <a class="btn primary" href="register.html">Choose Plan</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="features">
+  <h2 class="section-title">Member Platform</h2>
+
+  <div class="feature">
+    <div class="feature-grid">
+
+      <div class="feature-box">
+        <div class="icon">💰</div>
+        <b>Income Dashboard</b>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon">🎯</div>
+        <b>Get Leads</b>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon">👥</div>
+        <b>Downline Team</b>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon">💸</div>
+        <b>Withdrawal</b>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon">🏦</div>
+        <b>Bank KYC</b>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon">🎓</div>
+        <b>Training Links</b>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon">🪪</div>
+        <b>Digital ID Card</b>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon">📝</div>
+        <b>Submit Report</b>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon">🔔</div>
+        <b>Notifications</b>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon">🎧</div>
+        <b>Support</b>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="notice">
+    <h2>Start Your Journey</h2>
+    <p>
+      Nova Rise Academy provides access to training, freelancing-related
+      opportunities and member resources. Specific program terms,
+      eligibility and commission rules will be shown clearly to members.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <strong>Nova Rise Academy</strong><br>
+  Freelancing • Training • Member Platform<br><br>
+  © 2026 Nova Rise Academy. All rights reserved.
+</footer>
+
+</body>
+</html>
