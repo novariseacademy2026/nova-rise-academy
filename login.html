@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Login | Nova Rise Academy</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #111827, #312e81);
+      padding: 20px;
+    }
+
+    .login-box {
+      width: 100%;
+      max-width: 420px;
+      background: white;
+      padding: 35px 28px;
+      border-radius: 22px;
+      box-shadow: 0 15px 45px rgba(0,0,0,0.25);
+    }
+
+    .logo {
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .logo span {
+      color: #6d5dfc;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #777;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      margin-bottom: 18px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: #6d5dfc;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      background: #6d5dfc;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .login-btn:hover {
+      background: #5848e8;
+    }
+
+    .links {
+      text-align: center;
+      margin-top: 22px;
+      line-height: 2;
+    }
+
+    .links a {
+      color: #5b4ae8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back {
+      text-align: center;
+      margin-top: 18px;
+    }
+
+    .back a {
+      color: #555;
+      text-decoration: none;
+    }
+
+    .notice {
+      margin-top: 18px;
+      padding: 12px;
+      background: #f3f4f6;
+      border-radius: 10px;
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-box">
+
+    <div class="logo">
+      Nova Rise <span>Academy</span>
+    </div>
+
+    <p class="subtitle">Member Login</p>
+
+    <form>
+      <label for="email">Gmail / Email</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your Gmail"
+        required
+      >
+
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter your password"
+        required
+      >
+
+      <button type="submit" class="login-btn">
+        Login
+      </button>
+    </form>
+
+    <div class="links">
+      <a href="#">Forgot Password?</a><br>
+      Don't have an account?
+      <a href="register.html">Register</a>
+    </div>
+
+    <div class="back">
+      <a href="index.html">← Back to Home</a>
+    </div>
+
+    <div class="notice">
+      Secure member access. Your account information should only
+      be entered on the official Nova Rise Academy website.
+    </div>
+
+  </div>
+
+</body>
+</html>
