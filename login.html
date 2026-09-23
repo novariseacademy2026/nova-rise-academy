@@ -169,6 +169,42 @@
     </div>
 
   </div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
+<script>
+const SUPABASE_URL = "https://tvj...supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = sb_publishable_UjQADEqyQfxhJjHZx_p7Ng_pMLdqgIK
+
+const supabaseClient = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_PUBLISHABLE_KEY
+);
+
+document.querySelector("form").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const email = document.querySelector('input[type="email"]').value.trim();
+  const password = document.querySelector('input[type="password"]').value;
+
+  if (!email || !password) {
+    alert("Email aur password enter karo.");
+    return;
+  }
+
+  const { data, error } = await supabaseClient.auth.signInWithPassword({
+    email: email,
+    password: password
+  });
+
+  if (error) {
+    alert("Login failed: " + error.message);
+    return;
+  }
+
+  alert("Login successful!");
+
+  window.location.href = "index.html";
+});
+</script>
 </body>
 </html>
